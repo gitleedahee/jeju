@@ -1,19 +1,25 @@
 @charset "utf-8";
 @import url(./common.css);
 
+
+body{width: 100%; margin: 0 auto;}
 /* 메인 이미지 */
 .visual{}
 .visual>p>img{ 
     width: 100%; }
 
 /* 컨텐츠 1 */
+
 article{}
 .content-1{
-   
+    width: 100%;
+    padding-bottom: 150px;
     background-color: #d1ceb3;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    padding-top: 30px;
    
 }
 .content-1>div{margin: auto 100px ; }
@@ -36,14 +42,31 @@ article{}
     letter-spacing: -1px;
     color: rgb(0, 0, 0);
     font-size: 16px;
+   
 }
 
 
 
 /* 이미지 박스 [이미지 겹치기] */
-.content-1>div{}
-.content-1>div>p{}
-.content-1>div>p>img{ padding-right: 30px;}
+.content-1 .imgbox{}
+.content-1 .imgbox >div{ 
+    width: 333px;
+    height: 333px;
+    right: 25%;
+    top: 10%;
+    bottom: 0;
+}
+.content-1 .imgbox >div:nth-child(1){position: absolute;}
+.content-1 .imgbox >div:nth-child(2){position: absolute;}
+.content-1 .imgbox >div:nth-child(3){position: absolute;}
+.content-1 .imgbox >div:nth-child(4){position: absolute;}
+.content-1 .imgbox >div:nth-child(5){position: absolute;}
+
+
+.content-1 .imgbox >div>img{ 
+    padding-right: 30px;
+    width: 100%;
+}
 
 
 
@@ -54,7 +77,7 @@ article{}
 .content-2{
     height: 480px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
@@ -459,7 +482,9 @@ section .article-1 > ul > li:nth-child(1)> figure{ order: 1 ;}
     width: 100%;
 /*     height: 598px; */
     background-color: #dfdfda;
-    
+    padding-bottom: 150px;
+    position: relative;
+    padding-left: 150px;
 }
 
 
@@ -472,11 +497,12 @@ section .article-1 > ul > li:nth-child(1)> figure{ order: 1 ;}
     white-space: pre-line;
    
 }
+.question>p::before{display: none;}
 .question>div{}
 .question>div>img{}
 
 .table{
-    width: 1011px; height: 553px ;
+    width: 100%; height: 553px ;
     margin: 0 auto;
     text-align: left;
     display: table-cell;
@@ -484,6 +510,44 @@ section .article-1 > ul > li:nth-child(1)> figure{ order: 1 ;}
     align-items: center;
     padding-left: 500px;
     /* border-top: 1px solid #000; */
+}
+
+/* 아이콘 버튼 */
+.btn-icon{
+    display: none;
+    position: absolute;
+    right: 0%;
+}
+.btn-icon::after{
+   visibility:visible;
+}
+.btn-icon2{
+    position: absolute;
+    right: 0%;
+}
+.btn-icon2::after{
+    display: none;
+}
+.btn-icon >img{
+    border: none;
+    width: 17px; height: 18px;
+   
+} 
+
+
+.btn-icon2>img{
+    border: none;
+    width: 17px; height: 18px;
+
+
+
+}
+.btn-icon::before{
+ display: none;
+
+}
+.btn-icon2::after{
+ display: none;
 
 }
 .table>caption{
@@ -496,22 +560,25 @@ section .article-1 > ul > li:nth-child(1)> figure{ order: 1 ;}
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     height: 46px;
+    position: relative;
+   
   
 }
 .table>tbody>tr>td>p{
     border-top: 1px solid #e5e7eb;
     white-space: pre-line;
     text-align: left;
-    display: none; 
+   /*  display: none;  */
 }
-.table>tbody>tr>td>p::after{
+/* .table>tbody>tr>td>p::after{
     display: contents;
-}
+} */
 
 /* 하단 이미지 */
 
 .bottom-bg{
-    
+   height: 100%;
     width: 100%;
-    height: 100%;
+  
 }
+.bottom-bg>img{width: 100%;}

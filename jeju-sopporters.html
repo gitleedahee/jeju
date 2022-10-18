@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/jeju-sopporters.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
     <header>
-        <div ><img src="./img/main/header/main-logo.png" alt=""></div>
+        <div><a href="https://jejubeer.co.kr/"><img src="./img/main/header/main-logo.png" alt=""></a></div>
         <div class="main-menu">
             <nav><!-- COMMON.CSS에 정리 -->
-                <span><a href="">SUPPORTERS</a></span>
-                <span><a href="">COLLABORAION</a></span>
-                <span><a href="">BREWERY</a></span>
+                <span><a href="https://jejubeer.co.kr/witsupporters">SUPPORTERS</a></span>
+                <span><a href="https://jejubeer.co.kr/ouralecollection">COLLABORAION</a></span>
+                <span><a href="https://jejubeer.co.kr/brewery">BREWERY</a></span>
             </nav>
         </div>
         <div class="sub">
             <ul class="sub-menu">
-                <li><span><a href="">LOGIN</a></span></li>
-                <li><span><a href="">JOIN</a></span></li>
-                <li><span><a href="">CART</a></span></li>
-                <li><span><a href="">RECRUIT</a></span></li>
+                <li><span><a href="https://jejubeer.co.kr/login?back_url=Lw%3D%3D&used_login_btn=Y">LOGIN</a></span></li>
+                <li><span><a href="https://jejubeer.co.kr/site_join_type_choice?back_url=Lw%3D%3D">JOIN</a></span></li>
+                <li><span><a href="https://jejubeer.co.kr/shop_cart">CART</a></span></li>
+                <li><span><a href="https://sites.google.com/view/jejubeer-recruit/%EC%A0%9C%EC%A3%BC%EB%A7%A5%EC%A3%BC%EB%8B%A4%EC%9B%80">RECRUIT</a></span></li>
             </ul >
             <ul class="link">
-                <li><a href="">논알콜 제주누보 구매</a></li>
-                <li><a href="">양조장 예약</a></li>
+                <li><a href="https://jejubeer.co.kr/shop">논알콜 제주누보 구매</a></li>
+                <li><a href="https://jejubeer.co.kr/brewery-program">양조장 예약</a></li>
             </ul>
 
         </div>
 
     </header>
+
     <main>
         <section>
             <div class="visual">
@@ -51,12 +54,12 @@
                                 여러분이 지금 마시고 있는 맥주는 어떤 맥주인가요?
                             </P>
                         </div>
-                        <div ><!-- 이미지박스 <이미지 겹치기 앱솔루트> -->
-                            <p><img src="./img/sopporters/7bd280546bffc.png" alt=""></p>
-                            <p><img src="" alt=""></p>
-                            <p><img src="" alt=""></p>
-                            <p><img src="" alt=""></p>
-                            <p><img src="" alt=""></p>
+                        <div class="imgbox"  ><!-- 이미지박스 <이미지 겹치기 앱솔루트> 자바스크립트-->
+                            <div><img src="./img/sopporters/7bd280546bffc.png" alt=""></div>
+                            <div><img src="./img/sopporters/da16fe3998217.png" alt=""></div>
+                            <div><img src="./img/sopporters/462037f4f7e15.png" alt=""></div>
+                            <div><img src="./img/sopporters/3afffceab3195.png" alt=""></div>
+                            <div><img src="./img/sopporters/14a820ab08271.png" alt=""></div>
                         </div>
                     </div>
 
@@ -258,25 +261,32 @@
                         감사합니다.
                 </p>
             </div>
-            <div class="question">
+            <div class="question">  <!-- 버튼 이미지는 백그라운드로 넣어주기/ p태그는 자바스크립트 -->
                 <table class="table">
                     <caption> Q&A </caption>
                    
                     <tbody>
                         <tr>
+                            
                             <td>
+
                                 Q. 친구나 가족 등 지인과 함께 신청해도 되나요?
+                                <button class="btn-icon"><img src="./img/arrow-up.png" alt=""></button> 
+                                <button class="btn-icon2"><img src="./img/down-arrow.png" alt=""></button>
                                 <p>
                                     네.
                                     친구나 가족 등 지인이 20세 이상
                                     맥주 음용이 가능하면 함께할 수 있습니다.
                                     단, 신청서는 지인도 작성 및 제출해 주셔야 합니다.
                                 </p>
+                                
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 Q. 신청 대상자는 누구인가요?
+                                <button class="btn-icon"><img src="./img/arrow-up.png" alt=""></button> 
+                                <button class="btn-icon2"><img src="./img/down-arrow.png" alt=""></button>
                                 <p>
                                     20세 이상 맥주 음용이 가능하면 누구나 가능합니다.
                                     단, 제철단 신청서 작성 과정에서 회원가입 시
@@ -287,6 +297,8 @@
                         <tr>
                             <td>
                                 Q. 팔로워가 많거나 SNS를 활발하게 해야 제철단에 선정될 수 있나요?
+                                <button class="btn-icon"><img src="./img/arrow-up.png" alt=""></button> 
+                                <button class="btn-icon2"><img src="./img/down-arrow.png" alt=""></button>
                                 <p>
                                     아닙니다.
                                     팔로워수나 SNS 활성화 수준은 선정에 영향을 미치지 않습니다.
@@ -299,7 +311,7 @@
                        
                     </tbody>
                 </table>
-                <p>
+                <p >
                     제철단은 제주맥주 서포터즈 활동의 일환으로 운영되며,
 
                     보건복지부/한국건강증진개발원의 주류광고 준수사항에 따라,
@@ -308,6 +320,7 @@
                 </p>
 
             </div>
+
             <div class="bottom-bg">
                 <img src="./img/sopporters/a41289e55eb7e.jpg" alt="">
             </div>

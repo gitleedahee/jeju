@@ -31,8 +31,8 @@ header{
     position: relative;   
 }
 
-header> div {text-align: center;}
-header > div > img{width: 70px; height: 93px;  }
+header{text-align: center;}
+header  >div>img{width: 70px; height: 93px;  right: 90%; }
 
 
 /* 메뉴바 */

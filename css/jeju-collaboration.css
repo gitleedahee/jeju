@@ -309,3 +309,30 @@
     font-size: 16px;
 
 }
+/* 슬라이드 드래그 */
+.bottom-img {
+    width: 83%;
+    margin: 15px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 25s linear infinite;
+}  
+@keyframes bannermove {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+  }
+.bottom-img > div  {
+
+}
+.bottom-img > div >img {
+    width: 155px;
+    min-height: 413px;
+    min-width: 297px;
+    margin: 15px 15px;
+}
+
+    
