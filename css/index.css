@@ -7,7 +7,7 @@ main{background-color: none; color: #fff; }
 span{font-weight: bolder;}
 
 
-.visual-video{
+.visual-video>video{
     position: relative;
     width: 100%;
     display: flex;
@@ -246,22 +246,34 @@ span{font-weight: bolder;}
 ====================================================================
 */
 
-@media (max-width:480px) {
+@media (max-width:767px) {
     
+body{ max-width:767px}
 
-.visual-video{
-    position: relative;
-    width: 80%;
-    display: flex;
+.visual-video{overflow: hidden;}
+.visual-video>video{
+   
+    width: auto; height: 100vh;
+    /* transform: translateX(calc(-50% + 50vw)); -50% : 영상 , 50vw:디바이스*/
+    transform: translateX(calc(-50% + 50vw));
+    /* display: flex;  */
+    
+    display: inline-block;
+    
+    
+    
+    
 }
 
 /* 버튼 */
 .side-btn{ 
     background-color: none;
     position: fixed;
-    top: 80%;
-    right: 3%;
+    top: 70%;
+    right: 0%;
     bottom: 0;
+    left: 80%;
+    z-index: 999999; /* 위로 끌어올려주기 */
 }
 .side-btn>p{    
 
@@ -293,23 +305,30 @@ span{font-weight: bolder;}
     height: 173px;
 }
 .lager-flex{
-    display: flex;
+  /*   display: flex;
     justify-content: center;
-    align-items: center ;
-    margin: auto 0 ;
-    padding-bottom: 50px;
+    align-items: center ; */
+
+    display: block;
+    flex-direction: column;
+    text-align: center;
+   
+  /*   margin: auto 0 ;
+    padding-bottom: 50px; */
 }
 .lager-flex > b{
     white-space: pre-line;
     padding-left:20px ;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
 
 }
 .lager-flex > b>span{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    display: block;
     
 }
 .lager-flex >p> img{ width: 187px; height: 250px;}
@@ -333,22 +352,27 @@ span{font-weight: bolder;}
     display: flex;
     justify-content: center;
     align-items: center ;
+
+    flex-direction: column;
+
     margin: auto 0 ;
     padding-bottom: 50px;
 }
 .wit-flex >b{
     white-space: pre-line;
     padding-left:20px ;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
 }
 .wit-flex > p >img{
     width: 187px; height: 250px;
 
 }
 .wit-flex>b>span{
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    display: block;
 }
 
 /*펠롱웨일 소개 */
@@ -368,21 +392,25 @@ span{font-weight: bolder;}
     height: 86px;
 }
 .pellong-flex{
-    display: flex;
+   /*  display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center ; */
     margin: auto 0 ;
     padding-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
 }
 .pellong-flex >b{
     white-space: pre-line;
     padding-left:20px ;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
 }
 .pellong-flex >b >span{
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    display: block;
 }
 .pellong-flex>p>img{
     width: 187px; height: 250px;
@@ -403,21 +431,25 @@ span{font-weight: bolder;}
     width: 310px; height: 84px;
 }
 .geo-flex{
-    display: flex;
+  /*   display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center ; */
     margin: auto 0 ;
     padding-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
 }
 .geo-flex>b{
     white-space: pre-line;
     padding-left:20px ;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
 }
 .geo-flex>b>span{
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+    display: block;
 }
 .geo-flex>p>img{
     width: 200px; height: 267px;
@@ -428,15 +460,22 @@ span{font-weight: bolder;}
 /* 제주맥주 텍스트, 이미지박스 슬라이드 */
 .bottom-text{
     background-color: #fff;
-    width: 1200px;
-    display: flex;
+    width: 100%;
+/*     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin: 100px auto;
+    justify-content: center; */
+    display: inline-block;
+    margin: 10% auto;
 
 }
 .bottom-text >div{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,33 +484,30 @@ span{font-weight: bolder;}
     width: 83%;
     margin: 0 auto;
 }
+
+
 .bottom-text > p{
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 20px;
-    color: #1ecad3;
+    display: block;
+    font-size: 16px;
+   
 }    
 .bottom-text p span{
     color: #1ecad3;
-    font-size: 20px;
+    font-size: 16px;
+ 
 }
-.img-box {
-    width: 83%;
-    margin: 15px 15px;
-    display: flex;
-    flex-wrap: nowrap;
-    animation: bannermove 25s linear infinite;
+.img-box { /* 가로정렬 */
+    width: 100%; height: 100%;
+    margin: 18px 18px;
+    /* display: flex; */
+    animation: bannermove 3s linear infinite;
+   
+ 
+   
 }  
-@keyframes bannermove {
-    0% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-50%, 0);
-    }
-  }
-.img-box > div  {
 
+.img-box > div  {
+    padding: -5%;
 }
 .img-box > div >img {
     width: 155px;
