@@ -11,6 +11,7 @@ span{font-weight: bolder;}
     position: relative;
     width: 100%;
     display: flex;
+    vertical-align: middle; /* 인라인 요소라서 해줘야 빈틈이 안생김 */
 }
 
 /* 버튼 */
@@ -246,9 +247,9 @@ span{font-weight: bolder;}
 ====================================================================
 */
 
-@media (max-width:767px) {
+@media (max-width:998px) {
     
-body{ max-width:767px}
+body{ max-width:998px}
 
 .visual-video{overflow: hidden;}
 .visual-video>video{

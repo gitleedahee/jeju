@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(./common.css);
 
+main{margin: 0 auto;}
 .main-img{
     width: 100%;
     background-color: black;
@@ -8,6 +9,7 @@
     text-align: center;
     padding-bottom: 100px;
 }
+.main-img p img{ width: 100%;}
 .collabo-1{
     width: 100%;
     margin: 0 auto;
@@ -257,6 +259,9 @@
     background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
+    align-items: center;
+    text-align: center;
+
    
 }
 .bottom>div:nth-child(1){
@@ -287,19 +292,24 @@
     width: 1200px;
     padding-top: 70px;
     display: flex;
-    justify-content: flex-start;
+/*     justify-content: center;/// */
     flex-wrap: nowrap;
     overflow: hidden;
     margin: 0 auto;
    
    
 }
-.bottom-img>div{width: 25%;}
-.bottom-img>div>img{
-  
-    width: 100%; height: 100%;
- 
+.bottom-img>div >div {width: 25%; }
+.bottom-img div div img {
+
+    width: 100%;
+    min-height: 413px;
+    min-width: 297px;
+    margin: 15px 15px;
+    padding: 5%;
+    object-fit: cover;
 }
+
 
 .bottom>div>span{
     text-align: left;
@@ -310,29 +320,25 @@
 
 }
 /* 슬라이드 드래그 */
+
 .bottom-img {
-    width: 83%;
-    margin: 15px 15px;
+    width: 80%; 
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
-    animation: bannermove 25s linear infinite;
+/*     animation: bannermove 25s linear infinite; */
 }  
-@keyframes bannermove {
+/* @keyframes bannermove {
     0% {
         transform: translate(0%, 0);
     }
     100% {
         transform: translate(-50%, 0);
     }
-  }
+  } */
 .bottom-img > div  {
 
 }
-.bottom-img > div >img {
-    width: 155px;
-    min-height: 413px;
-    min-width: 297px;
-    margin: 15px 15px;
-}
+
 
     
