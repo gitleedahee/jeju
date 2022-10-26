@@ -5,44 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AOMG X 제주맥주</title>
     <link rel="stylesheet" href="./css/jeju-collaboration.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
 </head>
+
 <body>
     <header>
-        
-        <div class="logo">
-            <a href="https://gitleedahee.github.io/jeju/">
-                <picture>
-                    <source media="(min-width: 480px)" srcset="./img/63ed8a6f174b7.png">
-                    <img  src="./img/main/header/main-logo.png" alt="">
-                </picture>
-            </a>
-        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="https://gitleedahee.github.io/jeju/">
+                    <picture>
+                        <source media="(max-width: 998px)" srcset="./img/63ed8a6f174b7.png">
+                        <img src="./img/main/header/main-logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="main-menu">
+                <nav>
+                    <!-- COMMON.CSS에 정리 -->
+                    <span><a href="./jeju-sopporters.html">SUPPORTERS</a></span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span><a href="./jeju-brewery.html">BREWERY</a></span>
+                </nav>
+            </div>
+            <div class="sub">
+                <ul class="sub-menu">
+                    <li><span><a href="#">LOGIN</a></span>
+                    </li>
+                    <li><span><a href="#">JOIN</a></span>
+                    </li>
+                    <li><span><a href="#">CART</a></span></li>
+                    <li><span><a href="#">RECRUIT</a></span>
+                    </li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#">논알콜 제주누보 구매</a></li>
+                    <li><a href="#">양조장 예약</a></li>
+                </ul>
+            </div>
 
-        <div class="main-menu">
-            <nav><!-- COMMON.CSS에 정리 -->
-                <span><a href="https://jejubeer.co.kr/witsupporters">SUPPORTERS</a></span>
-                <span><a href="https://jejubeer.co.kr/ouralecollection">COLLABORAION</a></span>
-                <span><a href="https://jejubeer.co.kr/brewery">BREWERY</a></span>
-            </nav>
-        </div>
-        <div class="sub">
-            <ul class="sub-menu">
-                <li><span><a href="https://jejubeer.co.kr/login?back_url=Lw%3D%3D&used_login_btn=Y">LOGIN</a></span></li>
-                <li><span><a href="https://jejubeer.co.kr/site_join_type_choice?back_url=Lw%3D%3D">JOIN</a></span></li>
-                <li><span><a href="https://jejubeer.co.kr/shop_cart">CART</a></span></li>
-                <li><span><a href="https://sites.google.com/view/jejubeer-recruit/%EC%A0%9C%EC%A3%BC%EB%A7%A5%EC%A3%BC%EB%8B%A4%EC%9B%80">RECRUIT</a></span></li>
-            </ul >
-            <ul class="link">
-                <li><a href="https://jejubeer.co.kr/shop">논알콜 제주누보 구매</a></li>
-                <li><a href="https://jejubeer.co.kr/brewery-program">양조장 예약</a></li>
-            </ul>
+            <div class="menu-active">
+                <!-- 버거메뉴 누르면 나타나는 화면 -->
+                <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                <a href="./jeju-collaboration.html">COLLABORAION</a>
+                <a href="./jeju-brewery.html">BREWERY</a>
+            </div>
 
-        </div>
 
+
+            <button class="trigger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
 
@@ -188,8 +208,8 @@
         </article>
 
 
-        <div class="bottom">
-            <div>
+        <div class="bottom ">
+            <div >
                 <div class="bottom-top"><!-- text-aligin: center; -->
                     <strong>
                         제주맥주 아워 에일 컬렉션은 전국 CU와<br>
@@ -200,14 +220,16 @@
                         운영 시간 : 매일 12:30 - 19:30 (설날 & 추석 전 날, 당일 휴무)<br>
                     </span>
                 </div>
-                <div class="bottom-img"><!-- 이미지 슬라이드 , 드래그==자바 스크립트=-->
-                    <div><img src="./img/collaboration/af90c9d617db6.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/daa8349e70c12.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/516439d8c78c3.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/5111193d3a501.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/6065283b114ec.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/fef92be2b48a9.jpg" alt=""></div>
-                    <div><img src="./img/collaboration/5aaab7d62322e.jpg" alt=""></div>
+                <div class="bottom-img mySwiper "><!-- 이미지 슬라이드 , 드래그==자바 스크립트=-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/collaboration/af90c9d617db6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/daa8349e70c12.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/516439d8c78c3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/ddae472c42637.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/6065283b114ec.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/fef92be2b48a9.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/collaboration/5aaab7d62322e.jpg" alt=""></div>
+                    </div>
                 </div>
                 <div>
                     <span>
@@ -225,35 +247,95 @@
         </div>
 
     </main>
-    <footer><!-- flex -> space-between -->
-        
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>    
+        function init(){
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+  
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                
+                },
+            });
+        }
+        window.onload= init;
+
+
+
+
+   
+/*         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,/* enabled : false로 하면 버튼 숨겨짐 
+            },
+            breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+            },
+        });
+    */
+      </script>
+
+
+
+    <footer>
+        <!-- flex -> space-between -->
+
 
         <section class="footer">
             <div class="footer-btn">
-                <img src="./img/footer/f553848b58e03.png" alt="">
-                <img src="./img/footer/08634a2341636.png" alt="">
-                <img src="./img/footer/29268409b8739.png" alt="">     
+                <a href="https://m.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img src="./img/footer/f553848b58e03.png" alt=""></a>
+                <a href="#"><img src="./img/footer/08634a2341636.png" alt=""></a>
+                <a href="#"><img src="./img/footer/29268409b8739.png" alt=""></a>
             </div>
-            <div >
+            <div>
                 <div class="footer-text">
-                    <a href="">ABOUT US</a>
-                    <a href="">OUR BEERS</a>
-                    <a href="">NEWS</a>
-                    <a href="">CONTACT</a>
-                    <a href="">IR</a>
-                    <a href="">이용약관</a>
-                    <a href=""><span>개인정보 처리방침</span></a>
-                    <a href="">영상정보 처리방침</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">OUR BEERS</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">IR</a>
+                    <a href="#">이용약관</a>
+                    <a href="#"><span>개인정보 처리방침</span></a>
+                    <a href="#">영상정보 처리방침</a>
                     <P>
-                        제주맥주 주식회사     대표이사 문혁기
-                        본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11    서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
-                        호스팅 제공자 (주)아임웹    사업자등록번호 616-86-27415    통신판매업신고번호 제 2020-제주한림-0101 호
+                        제주맥주 주식회사 대표이사 문혁기
+                        본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
+                        서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
+                        호스팅 제공자 (주)아임웹
+                        사업자등록번호 616-86-27415
+                        통신판매업신고번호 제 2020-제주한림-0101 호
                         고객센터 02-2235-5559, jejubeer@jejubeer.co.kr
                     </P>
-                    <p>COPYRIGHT 2021@ JEJU BEER COMPANY</p>    
+                    <p>COPYRIGHT 2021@ JEJU BEER COMPANY</p>
                 </div>
             </div>
         </section>
+        <!-- <section>
+            <div class="side-btn">
+                <ul >
+                    <li><img src="./img/footer/2616c012b78f3.png" alt=""></li>
+                    <li><img src="./img/footer/button-share.png" alt=""></li>
+                    <li><img src="./img/footer/button-top.png" alt=""></li>
+                </ul>
+            </div>
+        </section> -->
 
     </footer>
     

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>제주맥주</title>
     <link rel="stylesheet" href="./css/jeju-brewery.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
@@ -14,38 +14,54 @@
 <body>
 
     <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://gitleedahee.github.io/jeju/">
+                    <picture>
+                        <source media="(max-width: 998px)" srcset="./img/63ed8a6f174b7.png">
+                        <img src="./img/main/header/main-logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="main-menu">
+                <nav>
+                    <!-- COMMON.CSS에 정리 -->
+                    <span><a href="./jeju-sopporters.html">SUPPORTERS</a></span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span><a href="./jeju-brewery.html">BREWERY</a></span>
+                </nav>
+            </div>
+            <div class="sub">
+                <ul class="sub-menu">
+                    <li><span><a href="#">LOGIN</a></span>
+                    </li>
+                    <li><span><a href="#">JOIN</a></span>
+                    </li>
+                    <li><span><a href="#">CART</a></span></li>
+                    <li><span><a href="#">RECRUIT</a></span>
+                    </li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#">논알콜 제주누보 구매</a></li>
+                    <li><a href="#">양조장 예약</a></li>
+                </ul>
+            </div>
 
-        <div class="logo">
-            <a href="https://gitleedahee.github.io/jeju/">
-                <picture>
-                    <source media="(min-width: 480px)" srcset="./img/63ed8a6f174b7.png">
-                    <img  src="./img/main/header/main-logo.png" alt="">
-                </picture>
-            </a>
-        </div>
-        
-        <div class="main-menu">
-            <nav>
-                <!-- COMMON.CSS에 정리 -->
-                <span><a href="">SUPPORTERS</a></span>
-                <span><a href="">COLLABORAION</a></span>
-                <span><a href="">BREWERY</a></span>
-            </nav>
-        </div>
-        <div class="sub">
-            <ul class="sub-menu">
-                <li><span><a href="">LOGIN</a></span></li>
-                <li><span><a href="">JOIN</a></span></li>
-                <li><span><a href="">CART</a></span></li>
-                <li><span><a href="">RECRUIT</a></span></li>
-            </ul>
-            <ul class="link">
-                <li><a href="">논알콜 제주누보 구매</a></li>
-                <li><a href="">양조장 예약</a></li>
-            </ul>
+            <div class="menu-active">
+                <!-- 버거메뉴 누르면 나타나는 화면 -->
+                <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                <a href="./jeju-collaboration.html">COLLABORAION</a>
+                <a href="./jeju-brewery.html">BREWERY</a>
+            </div>
 
-        </div>
 
+
+            <button class="trigger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
@@ -104,51 +120,51 @@
 
         <article class="info">
             <h3>INFO</h3>
-            
-                
-                <div>
-                    <div class="info-1">
-                        <strong>영업일 & 시간 안내</strong><br>
-                        <div>
-                            <strong>매일 12:30 - 19:30</strong>
-                            <span>(설날 & 추석 전 날, 당일 휴무)</span>
-                        </div>
-                        <p>
-                            양조장 PUB13:00 - 19:30 (주문마감 19:00)
-                            브랜드 샵12:30 - 19:30
-                        </p>
 
+
+            <div>
+                <div class="info-1">
+                    <strong>영업일 & 시간 안내</strong><br>
+                    <div>
+                        <strong>매일 12:30 - 19:30</strong>
+                        <span>(설날 & 추석 전 날, 당일 휴무)</span>
                     </div>
-                    <div class="info-2">
-                        <strong>이용 안내</strong><br>
-                        <div>
-                            <strong>양조장 PUB / 브랜드샵</strong>
-                            <span>: 동시간 대 입장 인원 제한</span>
-                            <p>프로그램 미예약자의 경우, 입장 대기 시간이 발생할 수 있습니다</p>
-                        </div>
-                        <div>
-                            <strong>양조장 투어 / 체험 프로그램</strong>
-                            <span>: 사전예약 필수</span>
-                            <p>예약은 홈페이지를 통해서만 가능합니다.<br>(전화 예약 불가)</p>
-                        </div>
+                    <p>
+                        양조장 PUB13:00 - 19:30 (주문마감 19:00)
+                        브랜드 샵12:30 - 19:30
+                    </p>
+
+                </div>
+                <div class="info-2">
+                    <strong>이용 안내</strong><br>
+                    <div>
+                        <strong>양조장 PUB / 브랜드샵</strong>
+                        <span>: 동시간 대 입장 인원 제한</span>
+                        <p>프로그램 미예약자의 경우, 입장 대기 시간이 발생할 수 있습니다</p>
                     </div>
-                    <div class="info-3">
-                        <strong>문의</strong><br>
-                        <div>
-                            <strong>채팅상담</strong>
-                            <div class="info-3-img">
-                                <p><img src="./img/brewery/d0c26e43ca2a9.png" alt=""></p>
-                                <p><img src="./img/brewery/2bc7668f21a90.png " alt=""></p>
-                            </div>
-                        </div>
-                        <div>
-                            <strong>전화상담</strong>
-                            <span>064 - 798 - 9872</span>
-                            <p>* 오후 6시부터 오전 11시까지는 전화연결이 어렵습니다.</p>
-                        </div>
+                    <div>
+                        <strong>양조장 투어 / 체험 프로그램</strong>
+                        <span>: 사전예약 필수</span>
+                        <p>예약은 홈페이지를 통해서만 가능합니다.<br>(전화 예약 불가)</p>
                     </div>
                 </div>
-            
+                <div class="info-3">
+                    <strong>문의</strong><br>
+                    <div>
+                        <strong>채팅상담</strong>
+                        <div class="info-3-img">
+                            <p><img src="./img/brewery/d0c26e43ca2a9.png" alt=""></p>
+                            <p><img src="./img/brewery/2bc7668f21a90.png " alt=""></p>
+                        </div>
+                    </div>
+                    <div>
+                        <strong>전화상담</strong>
+                        <span>064 - 798 - 9872</span>
+                        <p>* 오후 6시부터 오전 11시까지는 전화연결이 어렵습니다.</p>
+                    </div>
+                </div>
+            </div>
+
 
         </article>
 
@@ -170,24 +186,28 @@
 
         <section class="footer">
             <div class="footer-btn">
-                <img src="./img/footer/f553848b58e03.png" alt="">
-                <img src="./img/footer/08634a2341636.png" alt="">
-                <img src="./img/footer/29268409b8739.png" alt="">
+                <a href="https://m.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img
+                        src="./img/footer/f553848b58e03.png" alt=""></a>
+                <a href="#"><img src="./img/footer/08634a2341636.png" alt=""></a>
+                <a href="#"><img src="./img/footer/29268409b8739.png" alt=""></a>
             </div>
             <div>
                 <div class="footer-text">
-                    <a href="">ABOUT US</a>
-                    <a href="">OUR BEERS</a>
-                    <a href="">NEWS</a>
-                    <a href="">CONTACT</a>
-                    <a href="">IR</a>
-                    <a href="">이용약관</a>
-                    <a href=""><span>개인정보 처리방침</span></a>
-                    <a href="">영상정보 처리방침</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">OUR BEERS</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">IR</a>
+                    <a href="#">이용약관</a>
+                    <a href="#"><span>개인정보 처리방침</span></a>
+                    <a href="#">영상정보 처리방침</a>
                     <P>
                         제주맥주 주식회사 대표이사 문혁기
-                        본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11 서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
-                        호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415 통신판매업신고번호 제 2020-제주한림-0101 호
+                        본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
+                        서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
+                        호스팅 제공자 (주)아임웹
+                        사업자등록번호 616-86-27415
+                        통신판매업신고번호 제 2020-제주한림-0101 호
                         고객센터 02-2235-5559, jejubeer@jejubeer.co.kr
                     </P>
                     <p>COPYRIGHT 2021@ JEJU BEER COMPANY</p>

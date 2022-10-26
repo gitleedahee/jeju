@@ -19,12 +19,16 @@
     <meta property="twitter:description" content="제주맥주에 관련된 모든 내용" />
     <meta property="twitter:image" content="./img/sopporters/f88920f17ee31.png" />
 
-    <title>Document</title>
+    <title>제주맥주</title>
 
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/css/fonts.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="common.js"></script>
 
 
 </head>
@@ -35,7 +39,7 @@
             <div class="logo">
                 <a href="https://gitleedahee.github.io/jeju/">
                     <picture>
-                        <source media="(max-width: 480px)" srcset="./img/63ed8a6f174b7.png">
+                        <source media="(max-width: 998px)" srcset="./img/63ed8a6f174b7.png">
                         <img src="./img/main/header/main-logo.png" alt="">
                     </picture>
                 </a>
@@ -43,33 +47,32 @@
             <div class="main-menu">
                 <nav>
                     <!-- COMMON.CSS에 정리 -->
-                    <span><a href="https://jejubeer.co.kr/witsupporters">SUPPORTERS</a></span>
-                    <span><a href="https://jejubeer.co.kr/ouralecollection">COLLABORAION</a></span>
-                    <span><a href="https://jejubeer.co.kr/brewery">BREWERY</a></span>
+                    <span><a href="./jeju-sopporters.html">SUPPORTERS</a></span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span><a href="./jeju-brewery.html">BREWERY</a></span>
                 </nav>
             </div>
             <div class="sub">
                 <ul class="sub-menu">
-                    <li><span><a href="https://jejubeer.co.kr/login?back_url=Lw%3D%3D&used_login_btn=Y">LOGIN</a></span>
+                    <li><span><a href="#">LOGIN</a></span>
                     </li>
-                    <li><span><a href="https://jejubeer.co.kr/site_join_type_choice?back_url=Lw%3D%3D">JOIN</a></span>
+                    <li><span><a href="#">JOIN</a></span>
                     </li>
-                    <li><span><a href="https://jejubeer.co.kr/shop_cart">CART</a></span></li>
-                    <li><span><a
-                                href="https://sites.google.com/view/jejubeer-recruit/%EC%A0%9C%EC%A3%BC%EB%A7%A5%EC%A3%BC%EB%8B%A4%EC%9B%80">RECRUIT</a></span>
+                    <li><span><a href="#">CART</a></span></li>
+                    <li><span><a href="#">RECRUIT</a></span>
                     </li>
                 </ul>
                 <ul class="link">
-                    <li><a href="https://jejubeer.co.kr/shop">논알콜 제주누보 구매</a></li>
-                    <li><a href="https://jejubeer.co.kr/brewery-program">양조장 예약</a></li>
+                    <li><a href="#">논알콜 제주누보 구매</a></li>
+                    <li><a href="#">양조장 예약</a></li>
                 </ul>
             </div>
 
             <div class="menu-active">
                 <!-- 버거메뉴 누르면 나타나는 화면 -->
-                <a href="https://jejubeer.co.kr/witsupporters">SUPPORTERS</a>
-                <a href="https://jejubeer.co.kr/ouralecollection">COLLABORAION</a>
-                <a href="https://jejubeer.co.kr/brewery">BREWERY</a>
+                <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                <a href="./jeju-collaboration.html">COLLABORAION</a>
+                <a href="./jeju-brewery.html">BREWERY</a>
             </div>
 
 
@@ -79,21 +82,21 @@
                 <span></span>
                 <span></span>
             </button>
-        </div>    
+        </div>
     </header>
 
     <script>
 
         // nav, trigger-menu = 클래스 (active)를 토글
-    
+
         const nav = document.querySelector('.menu-active');
         const triggerMenu = document.querySelector('.trigger-menu');
-    
+
         triggerMenu.onclick = function () {
             nav.classList.toggle('active');
             triggerMenu.classList.toggle('active');
         }
-    
+
     </script>
 
 
@@ -102,7 +105,7 @@
 
 
     <!-- index.css에서 작업 -->
-    <main>
+    <main id="slider">
         <!--  -->
         <div class="visual-video">
             <!-- 비디오 사이즈 조절, 화면 비율 -->
@@ -210,20 +213,21 @@
 
         <section class="footer">
             <div class="footer-btn">
-                <img src="./img/footer/f553848b58e03.png" alt="">
-                <img src="./img/footer/08634a2341636.png" alt="">
-                <img src="./img/footer/29268409b8739.png" alt="">
+                <a href="https://m.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img
+                        src="./img/footer/f553848b58e03.png" alt=""></a>
+                <a href="#"><img src="./img/footer/08634a2341636.png" alt=""></a>
+                <a href="#"><img src="./img/footer/29268409b8739.png" alt=""></a>
             </div>
             <div>
                 <div class="footer-text">
-                    <a href="">ABOUT US</a>
-                    <a href="">OUR BEERS</a>
-                    <a href="">NEWS</a>
-                    <a href="">CONTACT</a>
-                    <a href="">IR</a>
-                    <a href="">이용약관</a>
-                    <a href=""><span>개인정보 처리방침</span></a>
-                    <a href="">영상정보 처리방침</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">OUR BEERS</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">IR</a>
+                    <a href="#">이용약관</a>
+                    <a href="#"><span>개인정보 처리방침</span></a>
+                    <a href="#">영상정보 처리방침</a>
                     <P>
                         제주맥주 주식회사 대표이사 문혁기
                         본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
