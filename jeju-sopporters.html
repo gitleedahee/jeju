@@ -9,6 +9,10 @@
     <link href="./css/jeju-sopporters.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
 </head>
 
 <body>
@@ -48,9 +52,57 @@
 
             <div class="menu-active">
                 <!-- 버거메뉴 누르면 나타나는 화면 -->
-                <a href="./jeju-sopporters.html">SUPPORTERS</a>
-                <a href="./jeju-collaboration.html">COLLABORAION</a>
-                <a href="./jeju-brewery.html">BREWERY</a>
+                <div class="mobile-top"><img src="./img/6628a9d464f31.png" alt=""></div>
+                <div class="mobile-login">
+                    <ul>
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">JOIN</a></li>
+                        <li><a href="">RECRIT</a></li>
+                    </ul>
+                    <p>| 양조장 예약</p>
+                </div>
+                <ul class="mobile-shop">
+                    <span><a href="#">SHOP</a></span>
+                    <span>
+                        <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                        <p>위트있는 제철단</p>
+                    </span>
+                    <span>
+                        <a href="#">JEJU BEER LIFE</a>
+                        <p>제주맥주 한달살기</p>
+                    </span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span>
+                        <a href="./jeju-brewery.html">BREWERY</a>
+                        <p>양조장 투어</p>
+                    </span>
+                </ul>
+                <ul class="mobile-about">
+                    <li><a href="https://jejubeer.co.kr/about">about us</a></li>
+                    <li><a href="https://jejubeer.co.kr/ourbeers">our beers</a></li>
+                    <li><a href="https://jejubeer.co.kr/news">news</a></li>
+                </ul>
+
+                <div class="mobile-png">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img
+                                    src="./img/744fb889f12ee.png" alt=""></a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/ebbb26702920a.png"
+                                    alt=""></a>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/6f391ebbb0949.png"
+                                    alt=""></a>
+                            <a href="https://post.naver.com/jejubeerpost"><img src="./img/21cc9ddee0e02.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-footer">
+                    <p>CONTACT</p>
+                    <p>IR</p>
+                </div>
             </div>
 
 
@@ -62,6 +114,7 @@
             </button>
         </div>
     </header>
+
 
     <main>
         <section>
@@ -173,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="article-3">
+            <div class="article-3 ">
                 <div>
                     <b>세 번째 철학</b><br>
                     <span>제주 자연을 닮은 풍미</span>
@@ -185,15 +238,12 @@
                         당신의 일상엔 늘 제주가 함께합니다.
                     </p>
                 </div>
-                <div class="image-box">
-                    <div>
-                        <img src="./img/sopporters/06194f4e80019.jpg" alt="">
-                        <img src="./img/sopporters/aaf82ecff4e15.jpg" alt="">
+                <div class="image-box mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/sopporters/06194f4e80019.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/sopporters/aaf82ecff4e15.jpg" alt=""></div>
                     </div>
-                    <div>
-                        <!-- 버튼 -->
-                    </div>
-
+                    <div class=".swiper-pagination"></div>
                 </div>
             </div>
 
@@ -211,6 +261,10 @@
                 <div>
                     <p><img src="./img/sopporters/4fa58e257750b.jpg" alt=""></p>
                 </div>
+
+            </div>
+            <div class="content-3-text">
+                <p>모집이 마감되었습니다.</p>
             </div>
             <div class="bg-green">
                 <div class="content-4">
@@ -358,10 +412,59 @@
             <div class="side-btn">
                 <p><img src="./img/footer/2616c012b78f3.png" alt=""></p>
                 <p><img src="./img/footer/button-share.png" alt=""></p>
-                <p><img src="./img/footer/button-top.png" alt=""></p>
+                <p class="btntop"><img src="./img/footer/button-top.png" alt=""></p>
             </div>
         </section>
     </main>
+
+    <script>
+
+
+        function init() {
+            var swiper = new Swiper(".mySwiper", {
+
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+            });
+        }
+        window.onload = init;
+
+        const topBtn = document.querySelector('.btntop');
+        const body = document.querySelector('main');
+
+        // top버튼 상단에서 안보이게 하기
+        body.addEventListener('wheel', () => {
+            let delta = event.wheelDelta;
+            if (delta < 0) {
+                topBtn.style.display = 'block';
+
+            } else {
+                topBtn.style.display = 'none';
+            }
+        });
+
+        // top버튼 누르면 상단으로 이동
+        topBtn.addEventListener('click', function () {
+
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+
+        });
+
+
+
+
+
+
+
+    </script>
 
     <footer>
         <!-- flex -> space-between -->
@@ -369,7 +472,8 @@
 
         <section class="footer">
             <div class="footer-btn">
-                <a href="https://m.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img src="./img/footer/f553848b58e03.png" alt=""></a>
+                <a href="https://m.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img
+                        src="./img/footer/f553848b58e03.png" alt=""></a>
                 <a href="#"><img src="./img/footer/08634a2341636.png" alt=""></a>
                 <a href="#"><img src="./img/footer/29268409b8739.png" alt=""></a>
             </div>

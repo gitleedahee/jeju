@@ -40,13 +40,23 @@ span{font-weight: bolder;}
     background-position: 50% 50%;
     padding-top: 50px;
     position: center;
-  
-   
-  
+}
+.scroll > p,
+.scroll > div > p,
+.scroll > div > b{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(50%);
 }
 
-.lager  > p{text-align: center; }
+.scroll.active > p,
+.scroll.active > div > p,
+.scroll.active > div > b{
+    opacity: 1;
+    transform: translateY(0%);
+}
 
+.lager > p{ text-align: center;}
 .lager > p > img{
     width: 186px;
     height: 173px;
@@ -81,7 +91,6 @@ span{font-weight: bolder;}
     background-size: cover ;
     background-position: 50% 50%;
     padding-top: 50px;
-    
    
 }
 .wit > p{ text-align: center;}
@@ -118,8 +127,9 @@ span{font-weight: bolder;}
     background-position: 50% 50%;
     position: center;
     padding-top: 50px;
-   
+    
 }
+
 .pellong>p{ text-align: center;}
 
 .pellong >p> img{
@@ -155,8 +165,10 @@ span{font-weight: bolder;}
     background-position: 50% 50%;
     position: center;
     padding-top: 50px;
+ 
    
 }
+
 .geo>p{ text-align: center;}
 .geo > p> img{
     width: 310px; height: 84px;
@@ -243,13 +255,13 @@ span{font-weight: bolder;}
 
 /* 
 ====================================================================
-============================480=====================================
+============================990=====================================
 ====================================================================
 */
 
-@media (max-width:998px) {
+@media (max-width:990px) {
     
-body{ max-width:998px}
+body{ max-width:990px}
 
 .visual-video{overflow: hidden;}
 .visual-video>video{
@@ -267,19 +279,19 @@ body{ max-width:998px}
 }
 
 /* 버튼 */
-.side-btn{ 
+/* .side-btn{ 
     background-color: none;
     position: fixed;
     top: 70%;
     right: 0%;
     bottom: 0;
-    left: 80%;
+    left: 90%;
     z-index: 999999; /* 위로 끌어올려주기 */
-}
+/* }
 .side-btn>p{    
 
 }
-.side-btn>p>img{ width: 60px; height: 60px;}
+.side-btn>p>img{ width: 60px; height: 60px;}  */
 
 
 

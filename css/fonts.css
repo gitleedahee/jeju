@@ -1,7 +1,7 @@
 
-@font-face { font-family: 'Gotham A'; src: url("../fonts/Gotham-Medium.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
-@font-face { font-family: 'Gotham A'; src: url("../fonts/Gotham-MediumItalic.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-MediumItalic.woff") format("woff"); font-weight: 500; font-style: italic; }
-@font-face { font-family: 'Gotham A'; src: url("../fonts/Gotham-Bold.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-Bold.woff") format("woff"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Gotham-Medium'; src: url("../fonts/Gotham-Medium.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Gotham-MediumItalic'; src: url("../fonts/Gotham-MediumItalic.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-MediumItalic.woff") format("woff"); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'Gotham-Bold'; src: url("../fonts/Gotham-Bold.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-Bold.woff") format("woff"); font-weight: 700; font-style: normal; }
 /* @font-face { font-family: 'Gotham A'; src: url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-BoldItalic.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/Gotham-BoldItalic.woff") format("woff"); font-weight: 700; font-style: italic; }
 
 @font-face { font-family: 'HGGGothicssi'; src: url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/HGGGothicssi20g.woff2") format("woff2"), url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/fonts/HGGGothicssi20g.woff") format("woff"); font-weight: 200; font-style: normal; }

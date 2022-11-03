@@ -13,7 +13,7 @@
     <meta property="og:image" content="./img/sopporters/f88920f17ee31.png" />
 
     <meta property="twitter:url" content="https://gitleedahee.github.io/jeju/" />
-    <meta property="twitter:card" content="summary" /> <!-- type과 비슷 배너 -->
+    <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="제주 맥주" />
     <meta property="twitter:title" content="제주 맥주" />
     <meta property="twitter:description" content="제주맥주에 관련된 모든 내용" />
@@ -22,16 +22,20 @@
     <title>제주맥주</title>
 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link href="https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/css/fonts.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script defer src="index.js"></script>
-    <script defer src="common.js"></script>
+   
+
 
 
 </head>
+
+<!-- 클론코딩하다 헷갈릴때 원본사이트에 우클릭 후 검사>> 코드랑 소스 확인 -->
 
 <body>
     <header>
@@ -70,9 +74,54 @@
 
             <div class="menu-active">
                 <!-- 버거메뉴 누르면 나타나는 화면 -->
-                <a href="./jeju-sopporters.html">SUPPORTERS</a>
-                <a href="./jeju-collaboration.html">COLLABORAION</a>
-                <a href="./jeju-brewery.html">BREWERY</a>
+                <div class="mobile-top"><img src="./img/6628a9d464f31.png" alt=""></div>
+                <div class="mobile-login">
+                    <ul>
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">JOIN</a></li>
+                        <li><a href="">RECRIT</a></li>
+                    </ul>
+                    <p>| 양조장 예약</p>
+                </div>
+                <ul class="mobile-shop">
+                    <span><a href="#">SHOP</a></span>
+                    <span>
+                        <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                        <p>위트있는 제철단</p>
+                    </span>
+                    <span>
+                        <a href="#">JEJU BEER LIFE</a>
+                        <p>제주맥주 한달살기</p>
+                    </span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span>
+                        <a href="./jeju-brewery.html">BREWERY</a>
+                        <p>양조장 투어</p>
+                    </span>
+                </ul>
+                <ul class="mobile-about">
+                    <li><a href="https://jejubeer.co.kr/about">about us</a></li>
+                    <li><a href="https://jejubeer.co.kr/ourbeers">our beers</a></li>
+                    <li><a href="https://jejubeer.co.kr/news">news</a></li>
+                </ul>
+            
+                <div class="mobile-png">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img src="./img/744fb889f12ee.png" alt=""></a></li>
+                    </ul>  
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/ebbb26702920a.png" alt=""></a>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/6f391ebbb0949.png" alt=""></a>
+                            <a href="https://post.naver.com/jejubeerpost"><img src="./img/21cc9ddee0e02.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+      
+                <div class="mobile-footer">
+                    <p>CONTACT</p>
+                    <p>IR</p>
+                </div>
             </div>
 
 
@@ -117,12 +166,12 @@
         <div class="side-btn">
             <p><img src="./img/footer/2616c012b78f3.png" alt=""></p>
             <p><img src="./img/footer/button-share.png" alt=""></p>
-            <p><img src="./img/footer/button-top.png" alt=""></p>
+            <p class="btntop"><img src="./img/footer/button-top.png" alt=""></p>
         </div>
 
         <section>
 
-            <div class="lager">
+            <div class="lager scroll">
 
                 <p><img src="./img/main/body/6e3f902eebdb9.png" alt=""></p>
 
@@ -138,7 +187,7 @@
 
             </div>
 
-            <div class="wit">
+            <div class="wit scroll">
                 <p><img src="./img/main/body/3badabe16b4cc.png" alt=""></p>
                 <div class="wit-flex">
                     <p><img src="./img/main/body/654c8d1e15f2e.png" alt=""></p>
@@ -151,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="pellong">
+            <div class="pellong scroll">
                 <p><img src="./img/main/body/55a43112137c1.png" alt=""></p>
 
                 <div class="pellong-flex">
@@ -167,7 +216,7 @@
                 </div>
             </div>
 
-            <div class="geo">
+            <div class="geo scroll">
                 <p><img src="./img/main/body/a61ddf39ed191.png" alt=""></p>
 
                 <div class="geo-flex">
@@ -206,6 +255,111 @@
 
 
     </main>
+
+    <script>
+        // window.pageYOffset = 2036, window.innerHeight =912
+        //document.documentElement.scrollHeight =3060
+/* 
+        const elSection = document.querySelector('section');
+
+        let sd = { y:0, y2:0, state:true }
+        let offset =[];
+
+        offset.push( ele.offsetTop - window.innerHeight * 0.7); */
+        /* console.log( document.documentElement.scrollHeight  ) */
+        
+// 스크롤 이벤트 ->> 스크롤 내리면 컨텐츠 나타나는 효과
+        function init(){  
+        const eleDiv = document.querySelectorAll('section >div ');
+        let sd = { y:0, y2:0, state:true }
+        let offset =[];
+        
+
+        eleDiv.forEach((ele)=>{
+            offset.push( ele.offsetTop - window.innerHeight * 0.7);
+        })
+
+        console.log(offset); /* 브라우저가 transform이 적용되기 전 위치값 */
+
+
+
+
+
+        window.addEventListener('scroll', ()=>{
+
+   
+
+            sd.y = window.pageYOffset
+  
+            sd.state = (sd.y > sd.y2) ?  true : false;
+            
+            sd.y2 = sd.y;
+
+            if(sd.state){
+                // 내림
+                eleDiv.forEach((ele,idx)=>{
+
+                
+                    if(window.pageYOffset > offset[idx]){/* **중요 */
+                    
+                        eleDiv[idx].classList.add('active'); 
+                    
+                    }
+                })
+                
+            }else{
+                // 올림
+
+            }
+
+            // 현재 스크롤보다 y2값이 크냐 작냐[스크롤 상황 체크하는 것]
+            // 스크롤 올릴수록 수치가 작아짐
+            // if(sd.y > sd.y2){
+            //     sd.state = '내림';
+            // }else{
+            //     sd.state = '올림';
+            // }
+            // sd.y2 = sd.y;
+
+
+            console.log(sd.state);
+
+        
+        })
+    }
+    window.addEventListener('load',init);
+
+
+
+    const topBtn = document.querySelector('.btntop');
+    const body = document.querySelector('main');
+
+// top버튼 상단에서 안보이게 하기
+    body.addEventListener('wheel', ()=>{
+        let delta = event.wheelDelta;
+        if(delta <0 ){
+            topBtn.style.display = 'block';
+
+        }else{
+            topBtn.style.display = 'none';
+        }
+    });
+
+    // top버튼 누르면 상단으로 이동
+    topBtn.addEventListener('click', function(){
+        
+        window.scrollTo({ top: 0,left:0, behavior: 'smooth' })
+
+    }); 
+
+    
+  
+
+  
+
+       
+        
+    </script>
 
     <footer>
         <!-- flex -> space-between -->

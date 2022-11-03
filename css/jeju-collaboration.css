@@ -10,6 +10,42 @@ main{margin: 0 auto;}
     padding-bottom: 100px;
 }
 .main-img p img{ width: 100%;}
+
+
+/* .scroll>h3,
+.scroll>div>h3,
+.scroll>div>span,
+.scroll>span
+{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(50%);
+}
+
+.scroll.active >h3,
+.scroll.active >div>h3,
+.scroll.active >span,
+.scroll.active >div>span
+{
+    opacity: 1;
+    transform: translateY(0%);
+} */
+
+
+
+.scrolltwo{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(50%);
+}
+
+
+
+.scrolltwo.active{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
 .collabo-1{
     width: 100%;
     margin: 0 auto;
@@ -258,7 +294,7 @@ main{margin: 0 auto;}
     background-color: black;
     background-size: cover;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 250px;
     align-items: center;
     text-align: center;
 
@@ -296,19 +332,27 @@ main{margin: 0 auto;}
     flex-wrap: nowrap;
     overflow: hidden;
     margin: 0 auto;
+    padding-bottom: 50px;
    
    
 }
-.bottom-img>div >div {width: 25%; }
-.bottom-img div div img {
 
+.swiper-wrapper >div{ padding: 0 10px;  width: 30%; }
+
+   
+
+
+.swiper-slide >img {
+    display: block;
     width: 100%;
     min-height: 413px;
-    min-width: 297px;
-    margin: 15px 15px;
-    padding: 5%;
     object-fit: cover;
+   /*  margin: 15px 15px; */
+    
+    
+    
 }
+
 
 
 .bottom>div>span{
@@ -322,7 +366,7 @@ main{margin: 0 auto;}
 /* 슬라이드 드래그 */
 
 .bottom-img {
-    width: 80%; 
+    width: 60%; 
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -336,9 +380,6 @@ main{margin: 0 auto;}
         transform: translate(-50%, 0);
     }
   } */
-.bottom-img > div  {
-
-}
 
 
     

@@ -49,9 +49,54 @@
 
             <div class="menu-active">
                 <!-- 버거메뉴 누르면 나타나는 화면 -->
-                <a href="./jeju-sopporters.html">SUPPORTERS</a>
-                <a href="./jeju-collaboration.html">COLLABORAION</a>
-                <a href="./jeju-brewery.html">BREWERY</a>
+                <div class="mobile-top"><img src="./img/6628a9d464f31.png" alt=""></div>
+                <div class="mobile-login">
+                    <ul>
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">JOIN</a></li>
+                        <li><a href="">RECRIT</a></li>
+                    </ul>
+                    <p>| 양조장 예약</p>
+                </div>
+                <ul class="mobile-shop">
+                    <span><a href="#">SHOP</a></span>
+                    <span>
+                        <a href="./jeju-sopporters.html">SUPPORTERS</a>
+                        <p>위트있는 제철단</p>
+                    </span>
+                    <span>
+                        <a href="#">JEJU BEER LIFE</a>
+                        <p>제주맥주 한달살기</p>
+                    </span>
+                    <span><a href="./jeju-collaboration.html">COLLABORAION</a></span>
+                    <span>
+                        <a href="./jeju-brewery.html">BREWERY</a>
+                        <p>양조장 투어</p>
+                    </span>
+                </ul>
+                <ul class="mobile-about">
+                    <li><a href="https://jejubeer.co.kr/about">about us</a></li>
+                    <li><a href="https://jejubeer.co.kr/ourbeers">our beers</a></li>
+                    <li><a href="https://jejubeer.co.kr/news">news</a></li>
+                </ul>
+            
+                <div class="mobile-png">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCVHSuXVobLHYTvcvsYjCncw"><img src="./img/744fb889f12ee.png" alt=""></a></li>
+                    </ul>  
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/ebbb26702920a.png" alt=""></a>
+                            <a href="https://www.facebook.com/jejubeerofficial/"><img src="./img/6f391ebbb0949.png" alt=""></a>
+                            <a href="https://post.naver.com/jejubeerpost"><img src="./img/21cc9ddee0e02.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+      
+                <div class="mobile-footer">
+                    <p>CONTACT</p>
+                    <p>IR</p>
+                </div>
             </div>
 
 
@@ -63,6 +108,24 @@
             </button>
         </div>
     </header>
+
+    <script>
+
+        // nav, trigger-menu = 클래스 (active)를 토글
+
+        const nav = document.querySelector('.menu-active');
+        const triggerMenu = document.querySelector('.trigger-menu');
+
+        triggerMenu.onclick = function () {
+            nav.classList.toggle('active');
+            triggerMenu.classList.toggle('active');
+        }
+
+  
+    
+
+
+    </script>
 
     <main>
         <ul class="sub-link">
@@ -97,15 +160,15 @@
             <div>
                 <P>우리나라에 없던 새로운 문화, 제주맥주 양조장에서 경험해보세요.</P>
             </div>
-            <ul>
-                <li>
+            <ul class="mySwiper">
+                <li class="swiper-slide">
                     <img src="./img/brewery/6aaef1d4673aa.png" alt="">
                     <p>
                         양조장 투어<br>
                         22,000원
                     </p>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <img src="./img/brewery/578b1b697d159.jpg" alt="">
                     <p>
                         나만의 전용잔 만들기<br>
@@ -113,6 +176,10 @@
                     </p>
                 </li>
             </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
             <div class="program-btn">
                 <a href="">더보기</a>
             </div>
@@ -171,14 +238,59 @@
         <div class="side-btn">
             <p><img src="./img/footer/2616c012b78f3.png" alt=""></p>
             <p><img src="./img/footer/button-share.png" alt=""></p>
-            <p><img src="./img/footer/button-top.png" alt=""></p>
+            <p class="btntop"><img src="./img/footer/button-top.png" alt=""></p>
         </div>
 
 
 
 
     </main>
+    <script>
 
+/*         let width = window.width();
+        if(width <=990){
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        }else if(width >990){}
+
+        window.addEventListener
+ */
+
+        const topBtn = document.querySelector('.btntop');
+        const body = document.querySelector('main');
+
+        // top버튼 상단에서 안보이게 하기
+        body.addEventListener('wheel', ()=>{
+            let delta = event.wheelDelta;
+                if(delta <0 ){
+                    topBtn.style.display = 'block';
+
+                }else{
+                    topBtn.style.display = 'none';
+                }
+        });
+
+        topBtn.addEventListener('click', function(){
+
+            window.scrollTo({ top: 0,left:0, behavior: 'smooth' })
+
+        }); 
+
+       
+
+
+    </script>
 
     <footer>
         <!-- flex -> space-between -->
