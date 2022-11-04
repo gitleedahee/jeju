@@ -206,32 +206,32 @@ nav>span >a:active{
    
   
 }
-.mobile-shop>span{display: block; padding: 10px 0;}
-.mobile-shop>span>a{  
+.mobile-shop>div{padding: 12px 0;}
+.mobile-shop>div>a{  
    
-    font-size: 2.8rem;  text-align: left; font-weight: bold;
+    font-size: 1.5rem;  text-align: left; font-weight: bold;
     
 }
-.mobile-shop>span:nth-child(2)>p{
+.mobile-shop>div:nth-child(2)>p{
     position: absolute;
-   right: 0%; left: 32%; top: 25%;bottom: 0;
-   font-size: 1.5rem;
+   right: 0%; left: 18%; top: 25%;bottom: 0;
+   font-size: 1rem;
 }
-.mobile-shop>span:nth-child(3)>p{
-    position: absolute; font-size: 1.5rem;
-   right: 0%; left: 35%; top: 45%;bottom: 0;
+.mobile-shop>div:nth-child(3)>p{
+    position: absolute; font-size: 1rem;
+   right: 0%; left: 22%; top: 42%;bottom: 0;
 }
-.mobile-shop>span:nth-child(5)>p{
-    position: absolute; font-size: 1.5rem;
-    right: 0%; left: 25%; top: 85%; bottom: 0;
+.mobile-shop>div:nth-child(5)>p{
+    position: absolute; font-size: 1rem;
+    right: 0%; left: 15%; top: 83%; bottom: 0;
 }
-.mobile-shop>span:nth-child(1){
+.mobile-shop>div:nth-child(1){
     background-image: url("../img/menu-icon-cart.png");
     background-repeat: no-repeat;
     background-position: 16% ;
 }
 
-.mobile-shop>span:nth-child(5){
+.mobile-shop>div:nth-child(5){
     box-sizing: border-box;
     width: 35%; margin-left: -5%; 
     border-top: 5px solid #1ecad3 ;
@@ -239,15 +239,15 @@ nav>span >a:active{
     padding: 2% 0;
 }
 
-.mobile-shop>span:nth-child(5)>a{margin-left: 13%; }
+.mobile-shop>div:nth-child(5)>a{margin-left: 13%; }
 .mobile-about{
     display: none;
     text-align: left;
     display: flex;flex-direction: column;position: absolute;
-    left:5%;  top: 65%; 
+    left:5%;  top: 70%; 
 }
 .mobile-about>li{}
-.mobile-about>li>a{font-size:2.5rem ; color: #555; font-weight: bold;}
+.mobile-about>li>a{font-size:1.5rem ; color: #555; font-weight: bold;}
 .mobile-png{
     display: none;
     width: 100%; height: auto;
@@ -505,33 +505,33 @@ nav>span >a:active{
    
   
 }
-.mobile-shop>span{display: block; padding: 10px 0;}
-.mobile-shop>span>a{  
+.mobile-shop>div{padding: 15px 0;}
+.mobile-shop>div>a{  
    
     font-size: 25px;  text-align: left; font-weight: bold;
     
 }
-.mobile-shop>span:nth-child(2)>p{
+.mobile-shop>div:nth-child(2)>p{
     position: absolute;
    right: 0%; left: 20%; top: 26%;bottom: 0;
    font-size: 14px;
 }
-.mobile-shop>span:nth-child(3)>p{
+.mobile-shop>div:nth-child(3)>p{
     position: absolute; font-size: 14px;
    right: 0%; left: 22%; top: 46%;bottom: 0;
 }
-.mobile-shop>span:nth-child(5)>p{
+.mobile-shop>div:nth-child(5)>p{
     position: absolute; font-size: 14px;
     right: 0%; left: 15%; top: 86%; bottom: 0;
 }
-.mobile-shop>span:nth-child(1){
+.mobile-shop>div:nth-child(1){
     background-image: url("../img/menu-icon-cart.png");
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 8% ;
 }
 
-.mobile-shop>span:nth-child(5){
+.mobile-shop>div:nth-child(5){
     box-sizing: border-box;
     width: 20%; margin: 0 -5%; 
     border-top: 3px solid #1ecad3 ;
@@ -539,11 +539,11 @@ nav>span >a:active{
     padding: 10px 0;
 }
 
-.mobile-shop>span:nth-child(5)>a{margin-left: 26%; }
+.mobile-shop>div:nth-child(5)>a{margin-left: 26%; }
 .mobile-about{
     
     display: flex; flex-direction: column; position: absolute;
-    left:2%;  top: 37%; 
+    left:2%;  top: 40%; 
 }
 .mobile-about>li{padding: 2% 0;}
 .mobile-about>li>a{font-size:22px ; color: #555; font-weight: 600;}

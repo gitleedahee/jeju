@@ -231,7 +231,8 @@ span{font-weight: bolder;}
     margin: 15px 15px;
     display: flex;
     flex-wrap: nowrap;
-    animation: bannermove 25s linear infinite;
+    transform: translate(0,0);
+    animation: bannermove 10s ease-in-out infinite;
 }  
 @keyframes bannermove {
     0% {
