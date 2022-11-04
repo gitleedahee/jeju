@@ -169,14 +169,14 @@ nav>span >a:active{
     transform: rotate(-135deg);
 }
 
-.menu-active{display: flex; width: 100%; display: none;margin: 0; }
-.menu-active.active{ display:flex; transform:translateY(0%);}
+.menu-active{display: none;/*  display: flex; */ width: 100%; display: none;margin: 0; }
+.menu-active.active{ /* display: none; */display:flex; transform:translateY(0%);}
 .mobile-top{
    
     position: absolute; left: 3%; bottom: 0; top: 3%;
     width:15%; ; margin: 0;
 }
-.mobile-top>img{ display:block;width: 100%;}
+.mobile-top>img{ display: none; display:block;width: 100%;}
 .mobile-login{
     display: none;
     position: absolute; top: 10%; 
@@ -505,7 +505,7 @@ nav>span >a:active{
    
   
 }
-.mobile-shop>div{padding: 15px 0;}
+.mobile-shop>div{ display:block;padding: 15px 0;}
 .mobile-shop>div>a{  
    
     font-size: 25px;  text-align: left; font-weight: bold;
